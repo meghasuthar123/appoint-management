@@ -1,0 +1,151 @@
+/* src/pages/HomePage.css */
+
+.homepage-container {
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center;
+  background-color: #E5E7EB; /* Bluish gray color */
+  text-align: left;
+}
+
+.homepage-text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black; 
+  margin-left: 300px;
+  margin-top: 50px;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Move down for effect */
+  transition: opacity 1.2s ease, transform 1.2s ease; /* Increase duration to 1.2s */
+}
+.feature-card {
+  display: flex;
+  background-color: black; /* Set background to black */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s, opacity 1.2s ease; /* Add fade-in transition */
+  display: inline-block; /* Make cards inline */
+  color: white; /* Set text color to white for better contrast */
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Move down for effect */
+}
+
+.feature-card.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move back to original position */
+}
+
+.feature-card p {
+  margin: 0;
+}
+
+.features-cards {
+ margin-left: 250px;
+}
+
+.homepage-text.fade-in {
+  opacity: 1; /* Fade in */
+  text-shadow: black; ;
+  transform: translateY(0); /* Move back to original position */
+}
+
+.home-under {
+  color: black;
+  text-align: left; /* Align the text to the left */
+  margin-left: 300px; /* Ensure margin is consistent */
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Move down for effect */
+  transition: opacity 1.2s ease, transform 1.2s ease; /* Increase duration to 1.2s */
+}
+
+.home-under.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move back to original position */
+}
+
+.featured-doctors {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Move down for effect */
+  transition: opacity 1.2s ease, transform 1.2s ease; /* Increase duration to 1.2s */
+}
+
+.featured-doctors.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move back to original position */
+}
+
+.doctors-carousel {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.doctor-card {
+  display: flex;
+  width: 50vh;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #E3F2FD; /* Soft Blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Add a smooth transition on hover */
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Move down for effect */
+  transition: opacity 1.2s ease 0.2s, transform 1.2s ease; /* Increased duration and added delay */
+}
+
+.doctor-card.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move back to original position */
+}
+
+.doctor-card:hover {
+  transform: rotate(5deg); /* Rotate the card slightly on hover */
+}
+
+.doctor-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.doctor-info {
+  margin-top: 10px;
+  color: #607d8b; /* Bluish gray color */
+}
+
+.appointment-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-button:hover {
+  background-color: #45a049;
+}
+
+.featured-doctors {
+  color: black;
+  font-size: 1rem;
+}
